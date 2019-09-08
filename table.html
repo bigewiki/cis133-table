@@ -14,10 +14,6 @@
     <link rel="stylesheet" type="text/css" href="table.css" />
   </head>
   <body>
-    <!-- 
-        Use scope and other features to make your table ADA compliant
-        Must include working validation link  and validate to  HTML 5 (and make sure you updated the validation URL so it validates the correct page)
-     -->
     <div class="flex-container">
       <table>
         <caption>
@@ -29,38 +25,44 @@
           <th scope="col">Owner</th>
         </tr>
         <tr>
-          <td>feed army</td>
-          <td>Build army</td>
-          <td class="greyworm">Grey Worm</td>
+          <td scope="row" headers="build army task">feed army</td>
+          <td headers="feed army goal">Build army</td>
+          <td headers="building army owner" class="greyworm">Grey Worm</td>
         </tr>
         <tr>
-          <td>discover source of support</td>
+          <td scope="row">discover source of support</td>
           <td rowspan="3">Crush resistance</td>
           <td class="tyrion" rowspan="2">Tyrion Lannister</td>
         </tr>
         <tr>
-          <td>identify leadership</td>
+          <td scope="row" headers="task for crush resistance">
+            identify leadership
+          </td>
         </tr>
         <tr>
-          <td>discredit their cause</td>
+          <td scope="row" headers="task for crush resistance">
+            discredit their cause
+          </td>
           <td class="daenerys">Daenerys Targaryen</td>
         </tr>
         <tr>
-          <td>discover costs</td>
-          <td>Get Navy</td>
-          <td class="tyrion" rowspan="3">Tyrion Lannister</td>
+          <td scope="row" headers="task for get navy">discover costs</td>
+          <td headers="goal for discovering costs" rowspan="3">Get Navy</td>
+          <td headers="owner for get navy" class="tyrion" rowspan="3">
+            Tyrion Lannister
+          </td>
         </tr>
         <tr>
-          <td>get captains for ships</td>
-          <td>Get Navy</td>
+          <td scope="row" headers="task for get navy">
+            get captains for ships
+          </td>
         </tr>
         <tr>
-          <td>find source for ships</td>
-          <td>Get Navy</td>
+          <td scope="row" headers="task for get navy">find source for ships</td>
         </tr>
         <tr>
-          <td colspan="2">feed dragons</td>
-          <td>NULL</td>
+          <td scope="row" colspan="2" headers="task and story">feed dragons</td>
+          <td headers="owner for feed dragons">None</td>
         </tr>
       </table>
     </div>

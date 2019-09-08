@@ -26,6 +26,7 @@ th,
 caption {
   line-height: 25px;
   box-shadow: 2px 4px 2px grey;
+  padding: 5px 8px 5px 8px;
 }
 
 td {
