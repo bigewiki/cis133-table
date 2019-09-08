@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Table!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="dcterms.rightsHolder" content="Edward M." />
+    <meta name="dcterms.dateCopyrighted" content="2019" />
+    <meta name="description" content="Super Amazing HTML Table" />
+    <meta
+      name="keywords"
+      content="super amazing awesome incredible fantastic cool"
+    />
+    <link rel="stylesheet" type="text/css" href="table.css" />
+  </head>
+  <body>
+    <!-- 
+        Use scope and other features to make your table ADA compliant
+        Must include working validation link  and validate to  HTML 5 (and make sure you updated the validation URL so it validates the correct page)
+     -->
+    <div class="flex-container">
+      <table>
+        <caption>
+          Task Overview
+        </caption>
+        <tr>
+          <th scope="col">Task Name</th>
+          <th scope="col">Goal</th>
+          <th scope="col">Owner</th>
+        </tr>
+        <tr>
+          <td>feed army</td>
+          <td>Build army</td>
+          <td class="greyworm">Grey Worm</td>
+        </tr>
+        <tr>
+          <td>discover source of support</td>
+          <td rowspan="3">Crush resistance</td>
+          <td class="tyrion" rowspan="2">Tyrion Lannister</td>
+        </tr>
+        <tr>
+          <td>identify leadership</td>
+        </tr>
+        <tr>
+          <td>discredit their cause</td>
+          <td class="daenerys">Daenerys Targaryen</td>
+        </tr>
+        <tr>
+          <td>discover costs</td>
+          <td>Get Navy</td>
+          <td class="tyrion" rowspan="3">Tyrion Lannister</td>
+        </tr>
+        <tr>
+          <td>get captains for ships</td>
+          <td>Get Navy</td>
+        </tr>
+        <tr>
+          <td>find source for ships</td>
+          <td>Get Navy</td>
+        </tr>
+        <tr>
+          <td colspan="2">feed dragons</td>
+          <td>NULL</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <div id="validator"></div>
+      <script>
+        document.getElementById(
+          "validator"
+        ).innerHTML = `<a href="http://validator.w3.org/nu/?doc=${window.location.href}" target="_blank">HTML 5 Validation</a>`;
+      </script>
+    </footer>
+  </body>
+</html>

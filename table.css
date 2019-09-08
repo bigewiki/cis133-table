@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eee7e2;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+caption {
+  border: 1px solid black;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+  background-color: #ececec;
+}
+
+td,
+th,
+caption {
+  line-height: 25px;
+  box-shadow: 2px 4px 2px grey;
+}
+
+td {
+  opacity: 0.8;
+  background-color: white;
+}
+
+td:hover {
+  opacity: 1;
+  box-shadow: 3px 6px 3px grey;
+  cursor: pointer;
+}
+
+th {
+  background-color: #080f36;
+  color: white;
+}
+
+table {
+  margin: 10px;
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  flex-shrink: 0;
+  margin-top: auto;
+}
+
+.daenerys {
+  background-color: #8e22ff;
+  color: white;
+}
+
+.tyrion {
+  background-color: #6c060d;
+  color: white;
+}
+
+.greyworm {
+  background-color: #c1c1c1;
+}
