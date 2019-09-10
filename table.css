@@ -33,17 +33,20 @@ td,
 th {
   opacity: 0.8;
   background-color: white;
+  font-weight: normal;
 }
 
-td:hover {
+td:hover,
+tbody th:hover {
   opacity: 1;
   box-shadow: 3px 6px 3px grey;
   cursor: pointer;
 }
 
-th.columns {
+thead th {
   background-color: #080f36;
   color: white;
+  font-weight: bold;
 }
 
 table {
