@@ -29,7 +29,8 @@ caption {
   padding: 5px 8px 5px 8px;
 }
 
-td {
+td,
+th {
   opacity: 0.8;
   background-color: white;
 }
@@ -40,7 +41,7 @@ td:hover {
   cursor: pointer;
 }
 
-th {
+th.columns {
   background-color: #080f36;
   color: white;
 }
